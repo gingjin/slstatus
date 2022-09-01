@@ -64,6 +64,9 @@ static const char unknown_str[] = "n/a";
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  *
  * media_mpd_stat      connect mpd                     NULL
+ *
+ * backlight_perc       backlight percentage            device name
+ *                                                      (intel_backlight)
  */
 static const struct arg args[] = {
 	/*function                format          argument */
@@ -72,6 +75,8 @@ static const struct arg args[] = {
   { media_mpd_stat,         "%s",           NULL },
   { separator,              " | ",          NULL },
   { vol_perc,               " %s%%",       "/dev/mixer" },
+  { separator,              " | ",          NULL },
+  { backlight_perc,         " %s%%",       "intel_backlight" },
   { separator,              " | ",          NULL },
   { netspeed_rx,            " %s",         "wlan0" },
   { separator,              " | ",          NULL },

@@ -3,6 +3,9 @@
 /* media */
 const char *media_mpd_stat(void);
 
+/* backlight */
+const char *backlight_perc(const char *);
+
 /* battery */
 const char *battery_perc(const char *);
 const char *battery_state(const char *);

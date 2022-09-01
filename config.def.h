@@ -80,9 +80,9 @@ static const struct arg args[] = {
   { separator,              " | ",          NULL },
   { netspeed_rx,            " %s",         "wlan0" },
   { separator,              " | ",          NULL },
-  { disk_free,              " %s",         "/" },
+  { disk_free,              " R:%s",       "/" },
   { separator,              " | ",          NULL },
-  { disk_free,              " %s",         "/home" },
+  { disk_free,              " H:%s",       "/home" },
   { separator,              " | ",          NULL },
   { ram_perc,               " %s%%",       NULL },
   { separator,              " | ",          NULL },
@@ -93,5 +93,5 @@ static const struct arg args[] = {
   { battery_perc,           " %s%%",       "BAT0" },
   { battery_state,          "%s",           "BAT0" },
   { separator,              " | ",          NULL },
-  { datetime,               " %s",         "周%u %y-%m-%d %H:%M" },
+  { datetime,               " %s",         "周%u %y-%m-%d %H:%M" },
 };

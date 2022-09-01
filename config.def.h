@@ -62,6 +62,8 @@ static const char unknown_str[] = "n/a";
  *                                                     NULL on OpenBSD
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
+ *
+ * media_mpd_stat      connect mpd                     NULL
  */
 static const struct arg args[] = {
 	/*function                format          argument */
@@ -69,7 +71,7 @@ static const struct arg args[] = {
   { separator,              " | ",          NULL },
   { media_mpd_stat,         "%s",           NULL },
   { separator,              " | ",          NULL },
-  { vol_perc,               " %s",         "/dev/mixer" },
+  { vol_perc,               " %s%%",       "/dev/mixer" },
   { separator,              " | ",          NULL },
   { netspeed_rx,            " %s",         "wlan0" },
   { separator,              " | ",          NULL },
@@ -85,5 +87,5 @@ static const struct arg args[] = {
   { separator,              " | ",          NULL },
   { battery_perc,           " %s%%",       "BAT0" },
   { separator,              " | ",          NULL },
-  { datetime,               " %s",         "%y年%m月%d日 周%u %H:%M" },
+  { datetime,               " %s",         "周%u %y-%m-%d %H:%M" },
 };

@@ -1,5 +1,8 @@
 /* See LICENSE file for copyright and license details. */
 
+/* media */
+const char *media_mpd_stat(void);
+
 /* battery */
 const char *battery_perc(const char *);
 const char *battery_state(const char *);

@@ -6,6 +6,7 @@ include config.mk
 
 REQ = util
 COM =\
+	components/media\
 	components/battery\
 	components/cpu\
 	components/datetime\
